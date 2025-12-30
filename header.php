@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <title>Blog Cá Nhân</title>
     <style>
-        body { margin:0; font-family: Arial, sans-serif; background: #f4f4f4; }
-        .header { background: #333; color: white; padding: 20px; text-align: center; }
-        .nav a { color: white; padding: 0 25px; text-decoration: none; font-size: 18px; }
-        .nav a:hover { color: #ddd; }
-        .openbtn { font-size: 24px; cursor: pointer; background: #111; color: white; padding: 10px 15px; border: none; position: fixed; left: 0; top: 0; z-index: 2; }
+        body { margin:0; font-family: Arial, sans-serif; background: #000; color: #eee; min-height: 100vh; display: flex; flex-direction: column; }
+        .header { background: #111; color: white; padding: 20px; text-align: center; border-bottom: 2px solid white; position: relative; overflow: hidden; }
+        .header::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(to left, rgba(255,255,255,0.15), transparent 70%); pointer-events: none; }
+        .nav a { color: white; padding: 0 25px; text-decoration: none; font-size: 18px; position: relative; z-index: 1; }
+        .nav a:hover { color: #fff; }
     </style>
 </head>
 <body>
-
-<span class="openbtn" onclick="openNav()">☰</span>
 
 <div class="header">
     <div class="nav">
