@@ -1,86 +1,144 @@
-<?php include 'config.php'; ?>
-<?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
+<?php include 'config.php'; include 'header.php'; ?>
 
-<!-- Main content sử dụng cùng page-container -->
-<div class="main" id="mainContent" style="
-    flex: 1; 
-    padding: 40px 0;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-">
-    <div class="page-container" style="padding: 0 50px; max-width: 1400px; margin: 0 auto;">
-        <div class="content-container" style="
-            background: rgba(15, 15, 15, 0.8);
-            border-radius: 15px;
-            padding: 30px;
-            border: 1px solid rgba(0, 255, 255, 0.1);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            margin-bottom: 30px;
-        ">
-            <div class="intro-container" style="display: flex; align-items: center; gap: 30px; margin-bottom: 30px; flex-wrap: wrap;">
-                <!-- Hình ảnh lập trình viên -->
-                <div class="developer-image" style="flex: 0 0 280px; position: relative;">
-                    <div style="width: 280px; height: 330px; background: linear-gradient(45deg, #2a2a2a, #1a1a1a); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.1);">
-                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+<div class="main" style="flex: 1; padding: 40px 0;">
+    <div class="page-container">
+        <div class="content-card">
+            <h2 style="color: #007bff; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 2px solid rgba(0, 123, 255, 0.3); font-size: 28px; display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 24px;">Thông tin chung về tôi</span>
+            </h2>
+            
+            <div style="display: flex; align-items: center; gap: 40px; margin-bottom: 30px; flex-wrap: wrap;">
+                <div style="flex: 0 0 280px;">
+                    <div style="width: 280px; height: 330px; background: linear-gradient(45deg, #e9ecef, #ffffff); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 123, 255, 0.15); border: 1px solid rgba(0, 123, 255, 0.2);">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
                             <div style="text-align: center; padding: 25px;">
-                                <div style="width: 110px; height: 110px; background: #333; border-radius: 50%; margin: 0 auto 15px; border: 3px solid #00ffff; display: flex; align-items: center; justify-content: center; font-size: 36px; color: #00ffff;">
-                                    <i class="code-icon">{"}</i>
+                                <div style="width: 140px; height: 140px; background: white; border-radius: 50%; margin: 0 auto 15px; border: 3px solid #007bff; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);">
+                                    <img src="assets/Sechi.JPG" alt="Sechi" style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
-                                <h3 style="color: white; margin-bottom: 10px; font-size: 18px;">Lập Trình Viên</h3>
-                                <p style="color: #aaa; font-size: 13px;">PHP • MySQL • JavaScript</p>
+                                <h3 style="color: #333; margin-bottom: 10px; font-size: 18px;">Lập Trình Viên Sơ Cấp</h3>
+                                <p style="color: #666; font-size: 13px;">PHP • MySQL • JavaScript</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Container mô tả -->
-                <div class="description-container" style="flex: 1; min-width: 280px;">
-                    <div style="background: rgba(20, 20, 20, 0.9); padding: 25px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.05); position: relative; overflow: hidden;">
-                        <!-- Hiệu ứng ánh sáng code -->
-                        <div style="position: absolute; top: 0; right: 0; width: 80px; height: 80px; background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);"></div>
-                        
-                        <h1 style="color: #00ffff; margin-bottom: 15px; font-size: 24px; text-shadow: 0 0 8px rgba(0, 255, 255, 0.3);">Chào mừng đến với Blog Cá Nhân</h1>
-                        <div style="color: #eee; line-height: 1.6; font-size: 15px;">
-                            <p style="margin-bottom: 12px;">Xin chào! Tôi là một <strong style="color: #00ffff;">lập trình viên full-stack</strong> với niềm đam mê mãnh liệt với công nghệ và sáng tạo.</p>
+                <div style="flex: 1; min-width: 280px;">
+                    <div style="background: rgba(255, 255, 255, 0.95); padding: 30px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 123, 255, 0.1); border: 1px solid rgba(0, 123, 255, 0.15);">
+                        <h1 style="color: #007bff; margin-bottom: 20px; font-size: 28px; text-shadow: 0 2px 4px rgba(0, 123, 255, 0.1);">Khơi gợi nguồn hứng khởi</h1>
+                        <div style="color: #555; line-height: 1.7; font-size: 16px;">
+                            <p style="margin-bottom: 15px;">Xin chào! Tôi là một <strong style="color: #007bff;">lập trình viên</strong> với 4 năm kinh nghiệm tiếp xúc với mảng công nghệ thông tin.</p>
                             
-                            <div style="background: rgba(0, 40, 40, 0.3); padding: 12px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #00ffff;">
-                                <p style="margin: 5px 0; font-size: 14px;"><strong>Chuyên môn:</strong> PHP, MySQL, JavaScript, HTML/CSS</p>
-                                <p style="margin: 5px 0; font-size: 14px;"><strong>Kinh nghiệm:</strong> 5+ năm phát triển web</p>
-                                <p style="margin: 5px 0; font-size: 14px;"><strong>Phong cách:</strong> Code sạch, tối ưu, hiệu quả</p>
+                            <div style="background: rgba(0, 123, 255, 0.05); padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #007bff;">
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                                    <div>
+                                        <p style="margin: 8px 0; font-size: 14px;"><strong style="color: #007bff;">Chuyên môn:</strong><br>PHP, MySQL, JavaScript, HTML/CSS</p>
+                                    </div>
+                                    <div>
+                                        <p style="margin: 8px 0; font-size: 14px;"><strong style="color: #007bff;">Kinh nghiệm:</strong><br>Sơ cấp</p>
+                                    </div>
+                                    <div>
+                                        <p style="margin: 8px 0; font-size: 14px;"><strong style="color: #007bff;">Phong cách:</strong><br>Code sạch, tối ưu</p>
+                                    </div>
+                                </div>
                             </div>
                             
-                            <p style="font-size: 15px;">Trong blog này, tôi chia sẻ kiến thức lập trình, kinh nghiệm phát triển web, các dự án cá nhân và những bài học quý giá từ thực tế. Hy vọng bạn tìm thấy điều hữu ích!</p>
+                            <p style="font-size: 15px;">Tôi tạo blog này để chia sẻ các vấp ngã, lỗi cơ bản và những bài học từ thực tế mà mình từng mắc phải để phát triển cho bản thân và các lập trình viên mới.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, rgba(0, 123, 255, 0.3), transparent); margin: 30px 0;"></div>
         </div>
         
-        <!-- Container cho bài viết -->
-        <div class="posts-container" style="
-        
-            background: rgba(15, 15, 15, 0.8);
-            border-radius: 15px;
-            padding: 25px 30px;
-            border: 1px solid rgba(0, 255, 255, 0.1);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-        "> 
-            <h2 style="color: #00ffff; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid rgba(0, 255, 255, 0.2); font-size: 22px;">Bài viết mới nhất</h2>
+        <!-- Latest Posts -->
+        <div class="content-card">
+            <h2 style="color: #007bff; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 2px solid rgba(0, 123, 255, 0.3); font-size: 28px; display: flex; align-items: center; gap: 10px; justify-content: space-between;">
+                <span style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 24px;">📝</span> Bài Viết Mới Nhất
+                </span>
+                <a href="posts.php" style="font-size: 14px; color: #007bff; text-decoration: none; display: flex; align-items: center; gap: 5px;">
+                    Xem tất cả →
+                </a>
+            </h2>
+            
             <?php
-            $result = mysqli_query($conn, "SELECT * FROM posts ORDER BY date DESC");
+            $result = mysqli_query($conn, "SELECT * FROM posts ORDER BY date DESC LIMIT 3");
             if (mysqli_num_rows($result) > 0) {
                 while($row = mysqli_fetch_assoc($result)) {
-                    echo '<div style="background:rgba(30,30,30,0.9); padding:20px; margin-bottom:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0, 255, 255, 0.1); border-left: 3px solid #00aaaa; color: #eee;">';
-                    echo '<h3 style="color: #00ffff; margin-top: 0; font-size: 20px; margin-bottom: 10px;">' . htmlspecialchars($row['title']) . '</h3>';
-                    echo '<p style="line-height: 1.6; color: #ddd; font-size: 15px;">' . nl2br(htmlspecialchars($row['content'])) . '</p>';
-                    echo '<small style="color: #aaa; display: block; margin-top: 15px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 13px;">Đăng lúc: ' . $row['date'] . '</small>';
-                    echo '</div>';
+                    $image_path = getImagePath($row['image_url']);
+                    ?>
+                    
+                    <div style="
+                        background: rgba(248, 249, 250, 0.9);
+                        padding: 25px;
+                        margin-bottom: 25px;
+                        border-radius: 12px;
+                        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.08);
+                        border-left: 4px solid #007bff;
+                        color: #555;
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                        cursor: pointer;
+                    " onclick="window.location.href='post.php?id=<?php echo $row['id']; ?>'"
+                      onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0, 123, 255, 0.15)'" 
+                      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0, 123, 255, 0.08)'">
+                    
+                        <div style="display: flex; gap: 20px; margin-bottom: 15px;">
+                            <?php if (!empty($row['image_url'])): ?>
+                            <div style="flex: 0 0 150px;">
+                                <img src="<?php echo htmlspecialchars($image_path); ?>" 
+                                     alt="<?php echo htmlspecialchars($row['title']); ?>" 
+                                     style="width: 100%; height: 100px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(0, 123, 255, 0.2);"
+                                     onerror="this.src='assets/default-post.jpg'">
+                            </div>
+                            <?php endif; ?>
+                            
+                            <div style="flex: 1;">
+                                <h3 style="color: #007bff; margin-top: 0; font-size: 20px; margin-bottom: 10px;">
+                                    <a href="post.php?id=<?php echo $row['id']; ?>" 
+                                       style="color: inherit; text-decoration: none; display: block;">
+                                        <?php echo htmlspecialchars($row['title']); ?>
+                                    </a>
+                                </h3>
+                                
+                                <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 15px; font-size: 13px; color: #666;">
+                                    <span style="background: rgba(0, 123, 255, 0.1); padding: 3px 10px; border-radius: 15px;">
+                                        <strong>👤</strong> <?php echo htmlspecialchars($row['author']); ?>
+                                    </span>
+                                    <span style="background: rgba(40, 167, 69, 0.1); padding: 3px 10px; border-radius: 15px;">
+                                        <strong>📂</strong> <?php echo htmlspecialchars($row['category']); ?>
+                                    </span>
+                                    <span style="background: rgba(108, 117, 125, 0.1); padding: 3px 10px; border-radius: 15px;">
+                                        <strong>👁️</strong> <?php echo number_format($row['views']); ?> lượt xem
+                                    </span>
+                                </div>
+                                
+                                <p style="line-height: 1.6; color: #666; font-size: 15px;">
+                                    <?php echo nl2br(htmlspecialchars(substr($row['content'], 0, 200))); ?>...
+                                </p>
+                                
+                                <a href="post.php?id=<?php echo $row['id']; ?>" 
+                                   style="color: #007bff; text-decoration: none; font-size: 14px; display: inline-block; margin-top: 10px;">
+                                    Đọc tiếp →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <small style="color: #888; display: block; margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.1); font-size: 13px;">
+                            <strong>📅</strong> Đăng lúc: <?php echo date('d/m/Y H:i', strtotime($row['date'])); ?>
+                        </small>
+                    </div>
+                    
+                    <?php
                 }
             } else {
-                echo '<div style="background:rgba(30,30,30,0.9); padding:25px; border-radius:10px; text-align:center; border: 1px dashed rgba(0, 255, 255, 0.3);">';
-                echo '<p style="color: #aaa; margin: 0;">Chưa có bài viết nào.</p>';
+                echo '<div style="
+                    background: rgba(248, 249, 250, 0.9);
+                    padding: 40px;
+                    border-radius: 12px;
+                    text-align: center;
+                    border: 2px dashed rgba(0, 123, 255, 0.3);
+                ">';
+                echo '<p style="color: #888; margin: 0; font-size: 16px;">📝 Chưa có bài viết nào.</p>';
                 echo '</div>';
             }
             mysqli_close($conn);
