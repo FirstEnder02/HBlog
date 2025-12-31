@@ -102,8 +102,6 @@
                                     <span style="background: rgba(108, 117, 125, 0.1); padding: 4px 12px; border-radius: 15px; display: flex; align-items: center; gap: 5px;">
                                         <span style="font-size: 12px;">👁️</span> <?php echo number_format($row['views']); ?> lượt xem
                                     </span>
-                                    <?php if ($is_local): ?>
-                                    <?php endif; ?>
                                 </div>
                                 
                                 <p style="line-height: 1.6; color: #666; font-size: 15px;">
