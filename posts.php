@@ -6,7 +6,7 @@
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                 <div>
                     <h2 style="color: #007bff; margin-bottom: 10px; font-size: 28px; display: flex; align-items: center; gap: 10px;">
-                        <span style="font-size: 24px;">📝</span> Tất Cả Bài Viết
+                        <span style="font-size: 24px;"></span> Tất Cả Bài Viết
                     </h2>
                     <p style="color: #666; font-size: 15px;">Tổng hợp tất cả bài viết về lập trình, công nghệ và kinh nghiệm phát triển web</p>
                 </div>
@@ -103,9 +103,6 @@
                                         <span style="font-size: 12px;">👁️</span> <?php echo number_format($row['views']); ?> lượt xem
                                     </span>
                                     <?php if ($is_local): ?>
-                                    <span style="background: rgba(40, 167, 69, 0.1); padding: 4px 12px; border-radius: 15px; display: flex; align-items: center; gap: 3px;">
-                                        <span style="font-size: 12px;">💾</span> Local Image
-                                    </span>
                                     <?php endif; ?>
                                 </div>
                                 
@@ -122,9 +119,7 @@
                         
                         <small style="color: #888; display: block; margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.1); font-size: 13px;">
                             <strong style="color: #555;">📅</strong> Đăng lúc: <?php echo date('d/m/Y H:i', strtotime($row['date'])); ?>
-                            <?php if ($is_local): ?>
-                             • <span style="color: #28a745;">📁 Local Image: <?php echo htmlspecialchars($row['image_url']); ?></span>
-                            <?php endif; ?>
+                            
                         </small>
                     </div>
                     

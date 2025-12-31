@@ -105,17 +105,7 @@
                         
                         <div style="margin-top: 25px;">
                             <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
-                                <div style="
-                                    width: 45px;
-                                    height: 45px;
-                                    background: rgba(255, 255, 255, 0.2);
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    font-size: 18px;
-                                ">
-                                </div>
+                               
                                 <div>
                                     <p style="color: rgba(255, 255, 255, 0.9); margin: 0 0 5px 0; font-size: 14px;">Email</p>
                                     <a href="mailto:tranhauhuy265@gmail.com" style="color: white; text-decoration: none; font-size: 16px; font-weight: 500;">
@@ -125,22 +115,9 @@
                             </div>
                             
                             <div style="display: flex; align-items: center; gap: 15px;">
-                                <div style="
-                                    width: 45px;
-                                    height: 45px;
-                                    background: rgba(255, 255, 255, 0.2);
-                                    border-radius: 50%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    font-size: 18px;
-                                ">
-                                </div>
                                 <div>
                                     <p style="color: rgba(255, 255, 255, 0.9); margin: 0 0 5px 0; font-size: 14px;">Điện thoại</p>
-                                    <a href="tel:+84123456789" style="color: white; text-decoration: none; font-size: 16px; font-weight: 500;">
-                                        +84 123 456 789
-                                    </a>
+                                    <a href="tel:+84777102004" style="color: white; text-decoration: none; font-size: 16px; font-weight: 500;">0123456whatever</a>
                                 </div>
                             </div>
                         </div>

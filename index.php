@@ -54,7 +54,7 @@
         <div class="content-card">
             <h2 style="color: #007bff; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 2px solid rgba(0, 123, 255, 0.3); font-size: 28px; display: flex; align-items: center; gap: 10px; justify-content: space-between;">
                 <span style="display: flex; align-items: center; gap: 10px;">
-                    <span style="font-size: 24px;">📝</span> Bài Viết Mới Nhất
+                    <span style="font-size: 24px;"></span> Bài Viết Mới Nhất
                 </span>
                 <a href="posts.php" style="font-size: 14px; color: #007bff; text-decoration: none; display: flex; align-items: center; gap: 5px;">
                     Xem tất cả →
